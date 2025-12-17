@@ -1,5 +1,4 @@
-console.log('Model import:', require('../models/productModel'));
-
+// console.log('Model import:', require('../models/productModel')); //model importa lo que tiene que importar?
 
 const { readProducts, writeProducts } = require('../models/productModel');
 
@@ -10,6 +9,9 @@ const getAllProducts = (req, res) => {
 };
 
 const createProduct = (req, res) => {
+
+    //console.log('BODY:', req.body); log de debug
+
     const { name, price, stock } = req.body;
 
     if(!name || price == null || stock == null) {
@@ -31,6 +33,9 @@ const createProduct = (req, res) => {
 };
 
 const updateProduct = (req, res) => {
+
+    //console.log('PUT /products/:id BODY:', req.body); log de debug
+
     const { id } = req.params;
     const { name, price, stock } = req.body;
 
@@ -51,6 +56,7 @@ const updateProduct = (req, res) => {
     writeProducts(products);
     res.json(products[productIndex]);
 };
+
 
 module.exports = {
     getAllProducts,
