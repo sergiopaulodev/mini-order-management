@@ -1,4 +1,3 @@
-//Leer y escribir pedido
 const fs = require('fs');
 const path = require('path');
 

@@ -1,17 +1,12 @@
 [
   {
-    "name": "Producto test",
-    "price": 100,
-    "stock": 10
-  },
-  {
-    "id": "1766000262726",
-    "name": "Producto test",
-    "price": 100,
-    "stock": 5
-  },
-  {
     "id": "1766001102822",
+    "name": "Producto test",
+    "price": 100,
+    "stock": 7
+  },
+  {
+    "id": "1766091506658",
     "name": "Producto test",
     "price": 100,
     "stock": 7

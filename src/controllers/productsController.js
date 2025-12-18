@@ -1,16 +1,11 @@
-// console.log('Model import:', require('../models/productModel')); //model importa lo que tiene que importar?
-
 const { readProducts, writeProducts } = require('../models/productModel');
 
 const getAllProducts = (req, res) => {
-  //console.log('GET /products hit');//este console.log me asegura que getAllProducts sí se ejecuta
     const products = readProducts();
     res.json(products);
 };
 
 const createProduct = (req, res) => {
-
-    //console.log('BODY:', req.body); log de debug
 
     const { name, price, stock } = req.body;
 
@@ -33,8 +28,6 @@ const createProduct = (req, res) => {
 };
 
 const updateProduct = (req, res) => {
-
-    //console.log('PUT /products/:id BODY:', req.body); log de debug
 
     const { id } = req.params;
     const { name, price, stock } = req.body;
