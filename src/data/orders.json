@@ -4,5 +4,18 @@
     "items": [],
     "status": "pending",
     "createdAt": "2025-12-18T21:01:46.159Z"
+  },
+  {
+    "id": "1766098756345",
+    "items": [
+      {
+        "productId": "p1",
+        "name": "Producto test",
+        "price": 100,
+        "quantity": 2
+      }
+    ],
+    "status": "pending",
+    "createdAt": "2025-12-18T22:59:16.345Z"
   }
 ]
