@@ -1,5 +1,10 @@
 const { readOrders, writeOrders } = require('../models/orderModel');
 
+const getAllOrders = (req, res) =>{
+    const orders = readOrders();
+    res.json(orders);
+    }
+
 const createOrder = (req,res) => {
     const { items } = req.body;
 
@@ -23,5 +28,6 @@ const createOrder = (req,res) => {
 }
 
 module.exports = {
+    getAllOrders,
     createOrder
 };
